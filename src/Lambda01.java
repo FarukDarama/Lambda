@@ -119,6 +119,9 @@ public class Lambda01 {
                 filter(t-> t%2==0 || t>34).
                 forEach(Lambda01::yazdir);
     }
+    public  static void yazdirString(String a){
+        System.out.print(a+" ");
+    }
 
 
 

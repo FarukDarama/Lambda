@@ -79,13 +79,13 @@ public class Lambda02 {
     * a ilk degerinden sonraki her değeri action(işlem)'dan alır
 
     */
-    public static void toplamPrint(List<Integer> sayi){
+    public static int toplamPrint(List<Integer> sayi){
        int toplam = sayi.
                stream().
                reduce(0,(a,b)->a+b);
 
         System.out.println("toplam = " + toplam);
-
+      return toplam;
     }
     // Task-7 : List'teki cift elemanlarin carpimini  yazdiriniz.
     public static void ciftElCarp(List<Integer> sayi){
